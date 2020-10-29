@@ -1,3 +1,5 @@
+-- https://clickhouse.tech/docs/en/operations/system-tables/parts/
+
 select concat(database, '.', table)                         as table,
        formatReadableSize(sum(bytes))                       as size,
        sum(rows)                                            as rows,
