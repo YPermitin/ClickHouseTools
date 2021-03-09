@@ -5,17 +5,17 @@
 
 | № | Раздел | Описание |
 | - | ------ | -------- |
-| 1 | [Common-Info](CS-Common-Info) | Cкрипты общего назначения для просмотра состояния и настроек инстанса и др |
-| 2 | [Data-Model-Info](CS-Data-Model-Info) | Просмотр модели данных и других связанных объектов |
-| 3 | [Databases-Info](CS-Databases-Info) | Информация о базах данных |
-| 4 | [Statistics](CS-Statistics) | Информация о статистиках, вопросах производительности и их анализе |
-| 5 | [Indexes](CS-Indexes) | Информация об индексах, вопросах производительности и их анализе |
-| 6 | [File-Groups](CS-File-Groups) | Информация о файловых группах |
-| 7 | [Partitioned-Tables-and-Indexes](CS-Partitioned-Tables-and-Indexes) | Секционирование таблиц и индексов |
-| 8 | [Perfomance](CS-Perfomance) | Производительность и оптимизация запросов, настроек сервера и поиск узких мест  |
-| 9 | [Backup-Info](CS-Backup-Info) | Резервное копирование и восстановление данных |
-| 10 | [Maintenance](CS-Maintenance) | Обслуживание баз данных и сервера |
-| 11 | [Diagnostics](CS-Diagnostics) | Диагностика работы СУБД |
+| 1 | [Common-Info](CH-Common-Info) | Cкрипты общего назначения для просмотра состояния и настроек инстанса и др |
+| 2 | [Data-Model-Info](CH-Data-Model-Info) | Просмотр модели данных и других связанных объектов |
+| 3 | [Databases-Info](CH-Databases-Info) | Информация о базах данных |
+| 4 | [Statistics](CH-Statistics) | Информация о статистиках, вопросах производительности и их анализе |
+| 5 | [Indexes](CH-Indexes) | Информация об индексах, вопросах производительности и их анализе |
+| 6 | [File-Groups](CH-File-Groups) | Информация о файловых группах |
+| 7 | [Partitioned-Tables-and-Indexes](CH-Partitioned-Tables-and-Indexes) | Секционирование таблиц и индексов |
+| 8 | [Perfomance](CH-Perfomance) | Производительность и оптимизация запросов, настроек сервера и поиск узких мест  |
+| 9 | [Backup-Info](CH-Backup-Info) | Резервное копирование и восстановление данных |
+| 10 | [Maintenance](CH-Maintenance) | Обслуживание баз данных и сервера |
+| 11 | [Diagnostics](CH-Diagnostics) | Диагностика работы СУБД |
 
 # Полезные ссылки:
 
