@@ -22,7 +22,7 @@
 # Полезные ссылки:
 
 * [Официальная документация](https://clickhouse.tech/docs/ru//index.html) - официальный источник информации о столбцовой СУБД.
-* [Блог компании Altinity](https://altinity.com/blog/) - бло компания Altinity, сопровожденца и внедренца ClickHouse.
+* [Блог компании Altinity](https://altinity.com/blog/) - блог компания Altinity, сопровожденца и внедренца ClickHouse.
 
 # Отказ от ответственности
 
