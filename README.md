@@ -1,4 +1,8 @@
-# Инфо о репозитории
+# ClickHouse Tools
+
+Инструменты обслуживания и разработки для Yandex ClickHouse, а также другие интересности
+
+## Инфо о репозитории
 
 Репозиторий содержит полезные скрипты для анализа, разработки и обслуживания баз данных на Yandex ClickHouse.
 
@@ -19,16 +23,33 @@
 | 10 | [Maintenance](CH-Maintenance) | Обслуживание баз данных и сервера |
 | 11 | [Diagnostics](CH-Diagnostics) | Диагностика работы СУБД |
 
-# Полезные ссылки:
+## Полезные ссылки
 
 * [Официальная документация](https://clickhouse.tech/docs/ru//index.html) - официальный источник информации о столбцовой СУБД.
 * [Блог компании Altinity](https://altinity.com/blog/) - блог компания Altinity, сопровожденца и внедренца ClickHouse.
+* Материалы по хранению логов в ClickHouse:
+    * [TESTING CLICKHOUSE AS LOGS ANALYSIS STORAGE](https://blog.luisico.net/2019/03/17/testing_clickhouse_as_logs_analysis_storage/) - пример хранения логов в ClickHouse и их доставки туда.
+    * [Разрабатываем самый удобный в мире* интерфейс для просмотра логов](https://m.habr.com/ru/post/512084/) - пример использования ClickHouse для хранения логов в связке с Graphana для визуализации.
+    * [Как ClickHouse помогает собирать логи Nginx](https://gon.gl/blog/nginx-log-processing-with-clickhouse/) - еще один пример сбора и обработки логов в ClickHouse.
+* [Использование Clickhouse в качестве замены ELK, Big Query и TimescaleDB](https://habr.com/ru/company/ua-hosting/blog/483112/)
+* [Переезжаем на ClickHouse: 3 года спустя](https://habr.com/ru/company/oleg-bunin/blog/328784/)
+* [Эффективное использование ClickHouse. Алексей Миловидов (Яндекс)](https://habr.com/ru/post/514840/)
+* Интересные решения для ClickHouse или на базе ClickHouse:
+    * [ClickHouse](https://github.com/ClickHouse/ClickHouse) - репозиторий самой СУБД. Отсюда все и начинается :)
+    * [clickhouse-operator](https://github.com/Altinity/clickhouse-operator) - полезное для создания, настройки и управления кластерами ClickHouse, работающими в Kubernetes.
+    * [Clickhouse Exporter for Prometheus](https://github.com/ClickHouse/clickhouse_exporter) - инструмент для экспорта метрик ClickHouse для Prometheus.
+    * [clickhouse-backup](https://github.com/AlexAkulov/clickhouse-backup) - инструменты для настройки резервного копирования баз ClickHouse.
+    * [tabix](https://github.com/tabixio/tabix) - простое клиентское приложение для ClickHouse (визуализация, редактор запросов и кое-что еще).
+    * [Vektor](https://github.com/timberio/vector) - мощный инструмент для отправки данных и операции с ними, в т.ч. и для ClickHouse.
+* [Что не так с ClickHouse: 10 главных недостатков](https://medium.com/@bigdataschool/что-не-так-с-clickhouse-10-главных-недостатков-6f06b0b0197f) - не все же идеально. Некотормые моменты уже не так актуальны, но почитать полезно.
 
-# Отказ от ответственности
+Еще больше материалов можно найти на [Habr.com](https://habr.com/ru/search/?q=Clickhouse&target_type=posts&flow=&order_by=relevance).
+
+## Отказ от ответственности
 
 Все содержимое репозитория предоставляется "AS-IS". Автор не несет ответственности за использование предоставленного материала.
 
-# Другое
+## Другое
 
 ClickHouse - потрясающая СУБД для OLAP. Для других целей лучше использовать и другие инструменты:
 
