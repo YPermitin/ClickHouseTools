@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Создание резервной копии базы данных через ALTER TABLE ... FREEZE PARTITION ...
 # с помощью утилиты clickhouse-backup (https://github.com/AlexAkulov/clickhouse-backup)
 
