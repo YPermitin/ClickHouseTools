@@ -37,7 +37,7 @@ while read -r db ; do
     clickhouse-client --user $clickhouse_user --password $clickhouse_password -q "SHOW CREATE TABLE ${db}.${table}" > "${OUTDIR}/${db}_${table}_schema.sql"
 
     # Сохраняем данные
-    clickhouse-clien --user $clickhouse_user --password $clickhouse_passwordt -q "SELECT * FROM ${db}.${table} FORMAT TabSeparated" | pigz > "${OUTDIR}/${db}_${table}_data.tsv.gz"
+    clickhouse-client --user $clickhouse_user --password $clickhouse_passwordt -q "SELECT * FROM ${db}.${table} FORMAT TabSeparated" | pigz > "${OUTDIR}/${db}_${table}_data.tsv.gz"
 
   done < <(clickhouse-client --user $clickhouse_user --password $clickhouse_password -q "SHOW TABLES FROM $db")
 done < <(clickhouse-client --user $clickhouse_user --password $clickhouse_password -q "SHOW DATABASES")
