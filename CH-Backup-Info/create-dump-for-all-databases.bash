@@ -39,7 +39,7 @@ while read -r db ; do
     # Сохраняем данные
     clickhouse-clien --user $clickhouse_user --password $clickhouse_passwordt -q "SELECT * FROM ${db}.${table} FORMAT TabSeparated" | pigz > "${OUTDIR}/${db}_${table}_data.tsv.gz"
 
-  done < <(clickhouse-client --user $clickhouse_user --password $clickhouse_password -q "SHOW TABLES FROM $db").
+  done < <(clickhouse-client --user $clickhouse_user --password $clickhouse_password -q "SHOW TABLES FROM $db")
 done < <(clickhouse-client --user $clickhouse_user --password $clickhouse_password -q "SHOW DATABASES")
 
 # Для восстановления необходимо выполнить подобные шаги:
