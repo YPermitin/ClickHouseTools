@@ -22,6 +22,7 @@
 | 9 | [Backup-Info](CH-Backup-Info) | Резервное копирование и восстановление данных |
 | 10 | [Maintenance](CH-Maintenance) | Обслуживание баз данных и сервера |
 | 11 | [Diagnostics](CH-Diagnostics) | Диагностика работы СУБД |
+| 12 | [Data Import & Export](CH-Data-Import-Export) | Все, что связано с импортом и экспортом данных |
 
 ## Полезные ссылки
 
