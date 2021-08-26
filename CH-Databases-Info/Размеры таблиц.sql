@@ -11,3 +11,16 @@ from system.parts
 where active
 group by database, table
 order by bytes_size desc;
+
+-- Можно получить более подробную информацию, в т.ч. если база разбита на разные части.
+
+SELECT 
+	database, 
+	table, 
+	partition, 
+	name part_name, 
+	active, 
+	bytes_on_disk,
+	*
+  FROM system.parts 
+  ORDER BY database, table, partition, name

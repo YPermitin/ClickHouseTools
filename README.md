@@ -23,6 +23,7 @@
 | 10 | [Maintenance](CH-Maintenance) | Обслуживание баз данных и сервера |
 | 11 | [Diagnostics](CH-Diagnostics) | Диагностика работы СУБД |
 | 12 | [Data Import & Export](CH-Data-Import-Export) | Все, что связано с импортом и экспортом данных |
+| 13 | [Replication](CH-Replication) | Репликация и боль :) |
 
 ## Интересные проекты
 
