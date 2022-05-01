@@ -1,4 +1,4 @@
 -- Список активных мутаций
--- https://clickhouse.tech/docs/ru/sql-reference/statements/alter/
+-- https://clickhouse.com/docs/ru/operations/system-tables/mutations/
 
 SELECT * FROM system.mutations; 
