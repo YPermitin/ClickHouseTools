@@ -25,6 +25,7 @@
 | 12 | [Data Import & Export](CH-Data-Import-Export) | Все, что связано с импортом и экспортом данных |
 | 13 | [Replication](CH-Replication) | Репликация и боль :) |
 | 14 | [Security](CH-Security) | Безопасность и права доступа |
+| 15 | [Integration](CH-Integration) | Интеграция с различными системами |
 
 ## Интересные проекты
 
