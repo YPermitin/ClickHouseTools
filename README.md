@@ -25,6 +25,7 @@
 | 13 | [Replication](CH-Replication) | Репликация и боль :) |
 | 14 | [Security](CH-Security) | Безопасность и права доступа |
 | 15 | [Integration](CH-Integration) | Интеграция с различными системами |
+| 16 | [Docker](CH-Docker) | Работа с Docker |
 
 ## Интересные проекты
 
@@ -36,9 +37,6 @@
 * [ClickHouseMigrator](https://github.com/zlzforever/ClickHouseMigrator) - мощная разработка для быстрой миграции данных в ClickHouse из различных источников.
 * [Monq.Core.ClickHouseBuffer](https://github.com/MONQDL/Monq.Core.ClickHouseBuffer) - .NET-библиотека для буферизации записей с последующей пакетной вставкой данных.
 * [YY.DBTools](https://github.com/YPermitin/YY.DBTools) - утилиты для различных СУБД, в т.ч. экспорта файлов расширенных событий (Extended Events) в базу данных ClickHouse.
-* [YY.EventLogExportAssistant](https://github.com/YPermitin/YY.EventLogExportAssistant) - библиотека для экспорта данных журнала регистрации платформы 1С:Предприятие 8.x.
-* [YY.TechJournalExportAssistant](https://github.com/YPermitin/YY.TechJournalExportAssistant) - библиотека для экспорта данных технологического журнала платформы 1С:Предприятие 8.x.
-* [OneSTools.EventLog](https://github.com/akpaevj/OneSTools.EventLog) - альтернативная реализация экспорта журнала регистрации платформы 1С в базу ClickHouse. Также есть [разработка для технологического журнала](https://github.com/akpaevj/OneSTools.TechLog).
 
 Конечно, это далеко не полный список, т.к. [проектов уже очень много](https://github.com/search?q=ClickHouse)!
 

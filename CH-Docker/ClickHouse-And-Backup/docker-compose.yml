@@ -1,0 +1,48 @@
+version: '3'
+
+networks:
+  clickhouse-network:
+    driver: bridge
+
+services:
+  clickhouse-server:
+    image: clickhouse/clickhouse-server
+    restart: always
+    container_name: clickhouse-server
+    hostname: clickhouse-server
+    ports:
+      - "127.0.0.1:8123:8123"
+      - "127.0.0.1:9000:9000"
+    volumes:
+      - ${PWD}/fs/volumes/clickhouse/server/config.d:/etc/clickhouse-server/config.d
+      - ${PWD}/fs/volumes/clickhouse/server/users.d:/etc/clickhouse-server/users.d
+      - ${PWD}/fs/volumes/clickhouse/server/data:/var/lib/clickhouse
+      - ${PWD}/fs/volumes/clickhouse/server/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
+    networks:
+      - clickhouse-network
+  clickhouse-backup:
+    image: altinity/clickhouse-backup
+    restart: always
+    container_name: clickhouse-backup
+    hostname: clickhouse-backup
+    volumes:
+      - ${PWD}/fs/volumes/clickhouse/backup-config:/etc/clickhouse-backup
+      - ${PWD}/fs/volumes/clickhouse/server/data:/var/lib/clickhouse
+    entrypoint:
+      - /bin/sleep
+    command:
+      - infinity
+    networks:
+      - clickhouse-network
+  sftp-server:
+    image: atmoz/sftp
+    restart: always
+    container_name: sftp-server
+    hostname: sftp-server
+    volumes:
+        - ${PWD}/fs/volumes/sftp/upload:/home/sftp/upload
+    ports:
+        - "2222:22"
+    networks:
+      - clickhouse-network
+    command: sftp:sftp:1001
